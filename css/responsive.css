@@ -1,0 +1,348 @@
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .hero {
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .properties-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Navigation */
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--dark);
+        flex-direction: column;
+        padding: 2rem;
+        border-bottom: 1px solid var(--border);
+        display: none;
+        gap: 1rem;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .nav-auth {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    
+    .nav-auth .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .user-menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .dropdown {
+        width: 100%;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        display: none;
+        margin-top: 0.5rem;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .placeholder-image {
+        height: 300px;
+        font-size: 3rem;
+    }
+    
+    /* Features */
+    .features {
+        padding: 3rem 0;
+    }
+    
+    .features h2 {
+        font-size: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Properties */
+    .properties-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Search and Filters */
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Dashboard */
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .property-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .property-list-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .property-list-actions .btn {
+        flex: 1;
+    }
+    
+    /* Authentication */
+    .auth-card {
+        padding: 2rem;
+        margin: 1rem;
+    }
+    
+    .auth-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    /* Page Header */
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1.1rem;
+    }
+    
+    /* Properties Header */
+    .properties-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    /* Grid Utilities */
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Featured Properties */
+    .featured-properties h2 {
+        font-size: 2rem;
+    }
+    
+    .cta h2 {
+        font-size: 2rem;
+    }
+    
+    .cta p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .quick-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search-filters {
+        padding: 1.5rem;
+    }
+    
+    .property-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .property-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .auth-card {
+        padding: 1.5rem;
+    }
+    
+    .dashboard-section {
+        padding: 1.5rem;
+    }
+    
+    .property-features {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .property-features span {
+        width: fit-content;
+    }
+    
+    .property-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .notification {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .properties-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo {
+        font-weight: 600;
+    }
+    
+    .feature-icon {
+        font-weight: 600;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .btn {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .container {
+        max-width: none !important;
+    }
+    
+    .property-card {
+        break-inside: avoid;
+        border: 1px solid #ccc !important;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .property-card:hover,
+    .feature-card:hover,
+    .stat-card:hover {
+        transform: none;
+    }
+}
+
+/* Dark mode support (already dark, but for consistency) */
+@media (prefers-color-scheme: dark) {
+    /* Our theme is already dark, so no changes needed */
+}
+
+/* Light mode support (if needed in future) */
+@media (prefers-color-scheme: light) {
+    /* We can add light theme support later if needed */
+}
